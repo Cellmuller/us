@@ -1,0 +1,272 @@
+main {
+    background-color: #FCFCFC;
+}
+.message-area{
+    background-image: url(../images/message-area-bg-img.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.message-area .text{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.message-area .text h2{
+    text-align: center;
+    color: #28A5A0;
+    margin-top: 25px;
+}
+.message-area > .text > div{
+    text-align: center;
+    margin: 25px 0;
+    color: #28A5A0;
+    font-size: 36px;
+    font-weight: bold;
+}
+.message-area .text p{
+    color: #686868;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    line-height: 2;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.container h2 {
+    color: #28A5A0;
+    text-align: center;
+    font-size: 44px;
+    font-family: "Aktiv Grotesk Cd" !important;
+    letter-spacing: 4px;
+    margin: 89px 0 35px;
+}
+.container h3 {
+    color: #28A5A0;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 62px;
+}
+/* カテゴリー */
+.category-area{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 30px auto 0;
+    
+}
+.category-item{
+    background-color: #F2FAF9;
+    flex: calc(100%/3);
+    margin: 25px 25px 73px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    max-width: 725px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    height: 581px;
+}
+.category-item:hover {
+    transform: scale(1.2);
+}
+.category-item > div:nth-child(2){
+    padding: 20px;
+}
+.category-item img{
+    display: block;
+    width: 100%;
+    border-radius: 20px 20px 0 0 ;
+    object-fit: cover;
+}
+.category-item .title{
+    color: #000000;
+    border-bottom: 1px solid #E5E8E8;
+    padding: 10px;
+    font-size: 22px;
+    display: flex;
+    font-weight: bold;
+}
+.category-item .title span{
+    display: block;
+    color: #01BBB4;
+    font-size: 18px;
+}
+.category-item .text{
+    color: #000000;
+    padding: 10px;
+    font-size: 17px;
+    line-height: 30px;
+}
+.gender-icon-wrapper {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.gender-icon {
+    margin-left: auto;
+    display: block;
+    width: 45px !important;
+    z-index: 5;
+    margin-left: 7px;
+}
+.text-sp {
+    display: none;
+}
+.detail-button{
+    background-color: #01BBB4;
+    text-decoration: none;
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: 10px 0 10px auto;
+    padding: 10px;
+    color: #fff;
+    border-radius: 25px;
+    transition: all .2s;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.detail-button:hover{
+    background: rgba(255, 255, 255, 0.5);
+    color: #B5B5B5;
+}
+/* カルーセル */
+.carousel-area{
+    width: 90%;
+    margin: 0 auto;
+    /* padding: 50px 0; */
+}
+.carousel-box h2{
+    margin-bottom: 20px;
+}
+.carousel-img{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    transition: all .2s;
+    border-radius: 10px;
+}
+.carousel-area a {
+    text-decoration: none;
+}
+.carousel-area p {
+    text-align: center;
+    margin: 10px 0;
+}
+.slick-slide {
+    margin: 0 1%;
+}
+.carousel-area a:hover{
+    opacity: 0.8;
+}
+.slick-prev:before, .slick-next:before {
+    color: #000 !important;
+    font-size: 30px !important;
+}
+.slick-prev {
+    top: 50%;
+    left: -60px !important;
+    transform: translateY(-50%);
+}
+.slick-next {
+    top: 50%;
+    right: -60px !important;
+    transform: translateY(-50%);
+}
+.slick-prev:before, .slick-next:before {
+    color: #28A5A0!important;
+    font-size: 30px !important;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #28A5A0 !important;
+}
+@media screen and (max-width:1800px) {
+    .category-item {
+        max-width: 615px;
+    }
+}
+@media screen and (max-width:1600px) {
+    .category-item {
+        max-width: 530px;
+    }
+}
+@media screen and (max-width:420px) {
+    .message-area{
+        background-size: 0;
+    }
+    .message-area .text {
+        width: 100%;
+    }
+
+    .message-area > .text > div {
+        font-size: 30px;
+    }
+
+    .message-area .text p {
+        padding: 0 3%;
+        width: 100%;
+        font-size: 13px;
+    }
+    .category-area{
+        width: 100%;
+    }
+    .category-item {
+        max-width: 165px;
+        margin: 0;
+        flex: calc(100%/2);
+        margin-bottom: 20px;
+        height: 178px;
+        border-radius: 10px;
+    }
+    .category-item .title div {
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .category-item .title span {
+        font-size: 10px;
+        padding-left: 10px;
+    }
+    .category-item > div:nth-child(2){
+        padding: 5px;
+    }
+    .category-item .title{
+        padding: 0;
+    }
+
+    .category-item .text {
+        display: none;
+    }
+    .gender-icon {
+        width: 20px !important;
+    }
+    .text-sp {
+        display: block;
+        font-size: 8px;
+    }
+    .carousel-area {
+        margin: 0 auto;
+    }
+
+    .carousel-area p{
+        margin: 15px 0;
+    }
+    .slick-slide {
+        margin: 0 10px;
+    }
+}
